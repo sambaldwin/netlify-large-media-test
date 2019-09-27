@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <h1>Netlify large media test</h1>
-  <img src="/media/20181121_SB_019.jpg?nf_resize=fit&w=1000" alt="">
-  <img width="1200" src="/media/20181121_SB_019.jpg" alt="">
-  <img src="/media/85-06.jpg?nf_resize=fit&w=400" alt="">
-  <img width="1200" src="/media/85-06.jpg" alt="">
+  <figure>
+    <img src="/media/85-06.jpg?nf_resize=fit&w=400" alt="">
+    <figcaption>Image resized by Netlify</figcaption>
+  </figure>
+  <figure>
+    <img src="/media/85-06.jpg" alt="">
+    <figcaption>Image at original size</figcaption>
+  </figure>
 </body>
 </html>
